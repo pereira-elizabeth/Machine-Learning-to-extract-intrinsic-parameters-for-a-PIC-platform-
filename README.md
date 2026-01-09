@@ -1,5 +1,5 @@
 # Machine-Learning-to-extract-intrinsic-parameters-for-a-PIC-platform-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18197753.svg)](https://doi.org/10.5281/zenodo.18197753)
+[![DOI](https://zenodo.org/badge/1112251572.svg)](https://doi.org/10.5281/zenodo.18197753)
 
 
 This repository contains the code used to infer intrinsic physical parameters
