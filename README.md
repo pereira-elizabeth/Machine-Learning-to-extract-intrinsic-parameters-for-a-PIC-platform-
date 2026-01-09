@@ -50,8 +50,6 @@ The code accompanies an upcoming research manuscript and is organized by physica
 - The notebooks are intended as reproducible research scripts, not as a
   standalone software package.
 - Automated tests are not included at this stage.
-- Some datasets may be preprocessed or reduced versions of experimental data
-  used in the associated manuscript.
 
 
 
