@@ -9,7 +9,7 @@ The code accompanies an upcoming research manuscript and is organized by physica
 “cases” (A, B, C), corresponding to increasing model complexity.
 
 ## Repository Structure
-├── data/
+- data/
 
 │ ├── case_A/    - we have a sample space of 1d chain of 8 ring resonators with all having different onsite losses, but same resonant frequencies for each ring (contains frequencies.txt, experiemntal spectra as full.txt, and onsite_lossesinGHz_afteradding_intrinsicloss.txt as data for onsite losses)
 
@@ -21,6 +21,15 @@ The code accompanies an upcoming research manuscript and is organized by physica
 ├── src/
 
 │ └── picml/ 
+- notebooks/
+  - case_A.ipynb – Parameter inference and theory comparison for Case A
+  - case_B.ipynb – Parameter inference and theory comparison for Case B
+  - case_C.ipynb – Joint inference of frequency shifts and losses
+- src/
+  - picml/
+    - dataio.py – Data loading utilities
+    - models.py – Neural network architectures
+    - theory.py – Hamiltonian and spectral simulations
 
 │    ├── init.py   
 
