@@ -10,12 +10,9 @@ The code accompanies an upcoming research manuscript and is organized by physica
 
 ## Repository Structure
 - data/
-
- - case_A/    - we have a sample space of 1d chain of 8 ring resonators with all having different onsite losses, but same resonant frequencies for each ring (contains frequencies.txt, experiemntal spectra as full.txt, and onsite_lossesinGHz_afteradding_intrinsicloss.txt as data for onsite losses)
-
- - case_B/    - we have a sample space of 1d chain of 8 ring resonators with all having different resonant frequencies, but same onsite losses for each ring (contains frequencies.txt, experiemntal spectra as full.txt, and finalized_resonant_freqs_wrt_ref_phase_using_fsr_and_puc_phases.txt as data for resonant frequencies)
-
- - case_C/    - we have a sample space of 1d chain of 8 ring resonators with all having different resonant frequencies and onsite losses for each ring (contains frequencies.txt, experiemntal spectra as full.txt, finalized_resonant_freqs_wrt_ref_phase_using_fsr_and_puc_phases.txt as data for resonant frequencies, and random_oniste_losses_inGHz.txt for onsite losses)
+   - case_A/    - we have a sample space of 1d chain of 8 ring resonators with all having different onsite losses, but same resonant frequencies for each ring (contains frequencies.txt, experiemntal spectra as full.txt, and onsite_lossesinGHz_afteradding_intrinsicloss.txt as data for onsite losses)
+   - case_B/    - we have a sample space of 1d chain of 8 ring resonators with all having different resonant frequencies, but same onsite losses for each ring (contains frequencies.txt, experiemntal spectra as full.txt, and finalized_resonant_freqs_wrt_ref_phase_using_fsr_and_puc_phases.txt as data for resonant frequencies)
+   - case_C/    - we have a sample space of 1d chain of 8 ring resonators with all having different resonant frequencies and onsite losses for each ring (contains frequencies.txt, experiemntal spectra as full.txt, finalized_resonant_freqs_wrt_ref_phase_using_fsr_and_puc_phases.txt as data for resonant frequencies, and random_oniste_losses_inGHz.txt for onsite losses)
 
 │
 ├── src/
