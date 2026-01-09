@@ -163,4 +163,13 @@ def sort_by_peak_frequency(z, S):
 
     return z[order], S[order, :], order
 
+def learning_rate_scheduler(epoch):
+    initial_learning_rate = 0.001  # Initial learning rate
+    if epoch <= 1:
+        return initial_learning_rate
+    else:
+        decay = 0.975  # Learning rate decay factor
+        lr = initial_learning_rate * (decay ** epoch)
+        return lr    
+   
 

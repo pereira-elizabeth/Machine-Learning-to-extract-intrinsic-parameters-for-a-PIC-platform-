@@ -77,19 +77,26 @@ def load_case_B(use_compensated: bool = False):
     # --- spectra ---
     # original spectra (in dB)
     spec_file = CASE_B_DIR / "full.txt"
-
     X_dB = np.loadtxt(spec_file, delimiter=" ")
+    
+    FSRs_ang = np.array([81.06753754801633, 83.41732126685432, 83.41764401355516, 82.24227030736816, 
+                 82.24290670919115, 82.24258850750248, 82.24258850750248, 83.41764401355516])
+    FSRs_scaling = FSRs_ang/(2.*np.pi)/4.
+    l = [0.15,0.15,0.15,0.15,0.15,0.15,0.15,0.15]
+    Losses = np.array(l * FSRs_scaling)
+    scaling = np.tile(Losses, X_dB.shape[0] // Losses.shape[0]) 
+    
 
     # convert from dB to linear scale
     X = 10.0 ** (X_dB / 10.0)
-
+    Xs = X / (4.*np.pi*scaling[:, np.newaxis])
     # --- basic sanity check ---
-    if X.shape[0] != y.shape[0]:
+    if Xs.shape[0] != y.shape[0]:
         raise ValueError(
             f"Mismatch between X and y: X has {X.shape[0]} rows, y has {y.shape[0]} entries."
         )
 
-    return X, y
+    return Xs, y
 
 import numpy as np
 from pathlib import Path
@@ -149,5 +156,5 @@ def load_case_C(use_compensated: bool = False):
             f"Mismatch: X has {X.shape[0]} rows but y has {y.shape[0]} samples."
         )
 
-    return X, y
+    return X, y,datay0,datay1
 
