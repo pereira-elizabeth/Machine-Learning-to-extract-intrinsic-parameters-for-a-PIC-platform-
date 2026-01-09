@@ -31,4 +31,25 @@ The code accompanies an upcoming research manuscript and is organized by physica
 - environment.yml
 - README.md
 
+## Running the Code
+
+1. Create the Conda environment:
+   ```bash
+   conda env create -f environment.yml
+   conda activate picml
+
+---
+
+## 7. Explicitly say what is *not* included (this helps you)
+
+```markdown
+## Notes
+
+- The notebooks are intended as reproducible research scripts, not as a
+  standalone software package.
+- Automated tests are not included at this stage.
+- Some datasets may be preprocessed or reduced versions of experimental data
+  used in the associated manuscript.
+
+
 
