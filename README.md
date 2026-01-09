@@ -38,11 +38,13 @@ The code accompanies an upcoming research manuscript and is organized by physica
    conda env create -f environment.yml
    conda activate picml
 
+2. Launch Jupyter:
+   ```bash
+   jupyter lab
+
+
 ---
 
-## 7. Explicitly say what is *not* included (this helps you)
-
-```markdown
 ## Notes
 
 - The notebooks are intended as reproducible research scripts, not as a
