@@ -19,13 +19,21 @@ The code accompanies an upcoming research manuscript and is organized by physica
 
 │
 ├── src/
-│ └── picml/       
+
+│ └── picml/ 
+
 │    ├── init.py   
+
 │    ├── dataio.py -contains functions to load input data
+
 │    ├── models.py  -contains the neural networks for all the cases
+
 │    ├── theory.py  - contains functions to generate theory data for the stage 2 of all the cases
+
 │    ├── utils.py  - contains necessary functions 
+
 │    └── training.py - contains the training routines for the stage 1 and stage 2 of all the three cases
+
 │
 ├── notebooks/ - Trains a neural network to extract Case A,B, or C respectively parameters from measured spectra. The predicted parameters are then used to generate theoretical spectra, which are compared directly with the experimental data. Each notebook contains the loading of data, training and prediction of neural networks, and finally a sorted figure to compare the predicted and true neural network.
 │ ├── case_A_execution.ipynb  
